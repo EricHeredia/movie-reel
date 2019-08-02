@@ -12,4 +12,9 @@ describe("Header", () => {
   it('renders without crashing', () => {
     shallow(<Header />);
   })
+
+  it('renders a logo', () => {
+    const logoImg = mountedHeader.find('img[src="images/logo.png"]');
+    expect(logoImg.length).toBe(1);
+  })
 })

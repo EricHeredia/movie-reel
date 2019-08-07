@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Main from './Main';
 import Details from './Details';
 
-const Display = ({ page }) => {
-  const [display, setDisplay] = useState({main: <Main />, details: <Details />});
+const Display = () => {
+
 
   return (
     <div>
-      {display[page]}
+      <Main />
     </div>
   )
 }

@@ -5,22 +5,19 @@ import Footer from './components/Footer';
 import Display from './containers/Display';
 import SearchBar from './components/SearchBar';
 
-function App() {
-  const testF = (tester) => {
-    document.getElementsByTagName('Display').page = "details"
-  }
-  
+const App = () => {
+
   return (
     <div className="App">
-      <Header sendLink={() => testF} />
+      <Header />
 
       <SearchBar />
 
-      <Display page="main" />
+      <Display />
 
       <Footer />
     </div>
   );
-}
+  }
 
 export default App;

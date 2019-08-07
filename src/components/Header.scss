@@ -1,15 +1,17 @@
+@import '../../colors';
+
 .nav-bar {
   height: 110px;
   display: flex;
   list-style: none;
   align-items: center;
-  background-color: rgb(128, 0, 0);
+  background-color: $mainRed;
   .nav-link {
     padding-left: 25px;
     a {
       text-decoration: none;
       font-weight: bold;
-      color: #EEE;
+      color: $mainWhite;
     }
   }
   .logo {

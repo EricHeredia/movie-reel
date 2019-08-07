@@ -1,0 +1,13 @@
+@import '../../colors';
+
+.footer {
+  background-color: $mainRed;
+  color: $mainWhite;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  a {
+    color: $mainWhite;
+  }
+}

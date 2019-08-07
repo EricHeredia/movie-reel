@@ -2,6 +2,7 @@ import React from 'react';
 import './Header.scss';
 
 const Header = ({ sendLink }) => {
+  console.log('rendered header')
   return (
     <div>
       <ul className="nav-bar">

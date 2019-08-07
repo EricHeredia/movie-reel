@@ -2,12 +2,13 @@ import React from 'react';
 import Main from './Main';
 import Details from './Details';
 
-const Display = () => {
+const Display = ({ show, setShowthis }) => {
 
-
+  console.log('rendered display')
   return (
     <div>
-      <Main />
+      <button onClick={() => setShowthis(show === 'Main' ? 'Details':'Main')}>TEST</button>
+      {show === 'Main' ? <Main />:<Details />}
     </div>
   )
 }

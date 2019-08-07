@@ -2,14 +2,21 @@ import React from 'react';
 import './App.scss';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Main from './containers/Main';
+import Display from './containers/Display';
+import SearchBar from './components/SearchBar';
 
 function App() {
+  const testF = (tester) => {
+    document.getElementsByTagName('Display').page = "details"
+  }
+  
   return (
     <div className="App">
-      <Header />
+      <Header sendLink={() => testF} />
 
-      <Main />
+      <SearchBar />
+
+      <Display page="main" />
 
       <Footer />
     </div>
